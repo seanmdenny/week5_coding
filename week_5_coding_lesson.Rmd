@@ -3,6 +3,27 @@ title: "Week 5 Coding Lesson - T-tests, Cohen's d, one-way ANOVA"
 output: html_document
 ---
 
+### Functions used:
+
+filter()
+geom_histogram
+geom(qq)
+facet_wrap()
+group_by()
+summarize()
+count() (combines group_by and summarizes sample size)
+pull() (to create a vector out of values in a column)
+t.test()
+cohen.d() (for effect size)
+levenTest() (tests for equal variances)
+geom_beeswarm
+geom_point()
+geom_errorbar()
+aov() (one-way ANOVA)
+TukeyHSD()
+lm()
+ANOVA() (can specify what type of ANOVA you want to run)
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
@@ -11,7 +32,6 @@ library(effsize)
 library(broom)
 library(ggbeeswarm)
 library(car)
-
 ```
 
 ## Part 1. T-tests & effect size
